@@ -10,6 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
+import pymysql
+pymysql.install_as_MySQLdb()
+
 import dj_database_url
 import os 
 from pathlib import Path
