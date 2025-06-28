@@ -1,5 +1,6 @@
 altgraph==0.17.4
 asgiref==3.8.1
+dj-database-url==3.0.0
 Django==5.1.7
 django-ckeditor-5==0.2.18
 django-filter==25.1
@@ -7,7 +8,6 @@ djangorestframework==3.16.0
 gunicorn==23.0.0
 mariadb==1.1.12
 Markdown==3.8.2
-mysqlclient==2.2.7
 packaging==24.2
 pefile==2023.2.7
 pillow==11.1.0
@@ -17,5 +17,6 @@ PyMySQL==1.1.1
 pywin32-ctypes==0.2.3
 setuptools==78.1.0
 sqlparse==0.5.3
+typing_extensions==4.14.0
 tzdata==2025.1
 whitenoise==6.9.0

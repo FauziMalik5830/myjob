@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
+import dj_database_url
 import os 
 from pathlib import Path
 
@@ -100,14 +101,9 @@ WSGI_APPLICATION = 'myjob.wsgi.application'
 #}
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'artikel_blog',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-    }
+    'default': dj_database_url.config(
+        default='mysql://root:@127.0.0.1:3306/artikel_blog'  # fallback ke XAMPP
+    )
 }
 
 
